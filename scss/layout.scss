@@ -1,0 +1,52 @@
+body {
+
+    .navbar {
+        background-color: rgb(10, 10, 70);
+    }
+
+    
+    
+}
+
+
+
+
+footer {
+
+    .footer-nav{
+        background-color: rgb(4, 35, 82);
+        opacity: 0.8;
+
+        p {
+            font-size: 12px;
+        }
+        
+    }
+    
+
+
+    .navbar-footer-img{
+        margin-bottom: 13px;
+        padding: 1px;
+        
+    }
+    .footer-menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+
+
+    .footer-menu-item {
+        font-size: 11px;
+
+
+        &:first-child{
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+    }
+
+
+}

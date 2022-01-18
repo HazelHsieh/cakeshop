@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout2</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Bootstrap Core CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- layout css -->
+    <link rel="stylesheet" href="./css/layout.css">
+    <!-- checkout css -->
+    <link rel="stylesheet" href="./css/checkout.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./bookshop-1202.html">
+                <img src="https://www.eslitecorp.com/eslite/img/themeImg/logo_w.svg" width="200px" height="30px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./checkout1.html">
+                            <i class="far fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">
+                            <i class="far fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container py-5 bg-light">
+            <div class="card">
+                <div class="card-header h3">
+                    購物車
+                </div>
+                <div class="card-body">
+                    <div class="d-flex ">
+                        <div class="w-25 d-flex flex-column align-items-center position-relative">
+                            <div class="progress-step badge-success m-3 rounded-circle">1</div>
+                            <span class="progress-text">確認購物車</span>
+                            <div class="progress position-absolute w-75">
+                                <div class="progress-bar bg-success " role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                        </div>
+                        <div class="w-25 d-flex flex-column align-items-center position-relative">
+                            <div class="progress-step badge-success m-3 rounded-circle">2</div>
+                            <span class="progress-text">付款與運送方式</span>
+                            <div class="progress position-absolute w-75">
+                                <div class="progress-bar bg-success " role="progressbar" style="width:25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="w-25 d-flex flex-column align-items-center position-relative">
+                            <div class="progress-step badge-light m-3 rounded-circle">3</div>
+                            <span class="progress-text">填寫資料</span>
+                            <div class="progress position-absolute w-75">
+                                <div class="progress-bar bg-success " role="progressbar" style="width:0%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="w-25 d-flex flex-column align-items-center position-relative">
+                            <div class="progress-step badge-light m-3 rounded-circle">4</div>
+                            <span class="progress-text">完成訂購</span>
+                            <div class="progress-bar "></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="h4 pay-way ">
+                        付款方式
+                    </div>
+                    <div class="ml-3 pay-check">
+                        <input class="pay-check-input" type="radio" name="payRadios" id="payRadios1" value="option1"
+                            checked>
+                        <label class="pay-check-label" for="payRadios1">
+                            信用卡付款
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="ml-3 form-check">
+                        <input class="form-check-input" type="radio" name="payRadios" id="payRadios2" value="option2">
+                        <label class="form-check-label" for="payRadios2">
+                            網路 ATM
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="ml-3 pay-check">
+                        <input class="pay-check-input" type="radio" name="payRadios" id="payRadios3" value="option3">
+                        <label class="pay-check-label" for="payRadios3">
+                            超商代碼
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="h4 shipping ">
+                        運送方式
+                    </div>
+                    <div class="ml-3 shipping-check">
+                        <input class="shipping-check-input" type="radio" name="shippingRadios" id="shippingRadios1"
+                            value="option1" checked>
+                        <label class="shipping-check-label" for="shippingRadios1">
+                            黑貓宅配
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="ml-3 shipping-check">
+                        <input class="shipping-check-input" type="radio" name="shippingRadios" id="shippingRadios2"
+                            value="option2">
+                        <label class="shipping-check-label" for="shippingRadios2">
+                            超商店到店
+                        </label>
+                    </div>
+                    <hr>
+
+
+
+
+                    <div class="order-price d-flex  flex-column ">
+                        <div class="order-gty">
+                            <span class="text-muted">數量:</span>
+                            <span class="gty">3</span>
+                        </div>
+                        <div class="order-subtotal">
+                            <span class="text-muted">小計:</span>
+                            <span class="subtotal">$24.90</span>
+                        </div>
+                        <div class="order-fee">
+                            <span class="text-muted">運費:</span>
+                            <span class="fee">$24.90</span>
+                        </div>
+                        <div class="order-total">
+                            <span class="text-muted">總計:</span>
+                            <span class="total">$24.90</span>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="div d-flex justify-content-between mb-3">
+                    <a class="nav-link active" href="./checkout1.html"> <i class="fal fa-arrow-circle-left"></i>
+                        回上一頁</a>
+                    <a href="./checkout3.html" class="btn btn-secondary mr-4">下一步</a>
+                </div>
+
+            </div>
+
+
+        </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-nav py-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a href="#">
+                            <img class="navbar-footer-img"
+                                src="https://www.eslitecorp.com/eslite/img/themeImg/logo_w.svg" width="190px"
+                                height="30px" alt="">
+                        </a>
+                        <p class=" text-white font-weight-light"> 不只是一間書店，更是一個空間，<br>一個安頓身心的場所。</p>
+                    </div>
+                    <div class="col">
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item text-white ">CATEGORIES</li>
+                            <li class="footer-menu-item text-white font-weight-light">First Link</li>
+                            <li class="footer-menu-item text-white font-weight-light">Second Link</li>
+                            <li class="footer-menu-item text-white font-weight-light">Third Link</li>
+                            <li class="footer-menu-item text-white font-weight-light">Fourth Link</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item text-white">CATEGORIES</li>
+                            <li class="footer-menu-item text-white font-weight-light">First Link</li>
+                            <li class="footer-menu-item text-white font-weight-light">Second Link</li>
+                            <li class="footer-menu-item text-white font-weight-light">Third Link</li>
+                            <li class="footer-menu-item text-white font-weight-light">Fourth Link</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item text-white">CATEGORIES</li>
+                            <li class="footer-menu-item text-white font-weight-light">First Link</li>
+                            <li class="footer-menu-item text-white font-weight-light">Second Link</li>
+                            <li class="footer-menu-item text-white font-weight-light">Third Link</li>
+                            <li class="footer-menu-item text-white font-weight-light">Fourth Link</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item text-white">CATEGORIES</li>
+                            <li class="footer-menu-item text-white font-weight-light">First Link</li>
+                            <li class="footer-menu-item text-white font-weight-light">Second Link</li>
+                            <li class="footer-menu-item text-white font-weight-light">Third Link</li>
+                            <li class="footer-menu-item text-white font-weight-light">Fourth Link</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light">
+            <div class="container d-flex justify-content-between">
+                <div class="copyright">
+                    © 2020 Tailblocks — @knyttneve
+                </div>
+                <div class="community">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- jquery Core JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- popper Core JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap Core JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <!-- checkout jc -->
+    <script src="./js/checkout.js"></script>
+
+</body>
+
+</html>

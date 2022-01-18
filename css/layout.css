@@ -3,17 +3,12 @@ body .navbar {
 }
 
 footer .footer-nav {
-  background-color: #D9DFE7;
+  background-color: #042352;
   opacity: 0.8;
 }
 
 footer .footer-nav p {
   font-size: 12px;
-}
-
-footer .footer-info {
-  padding-left: calc(100% - 85%);
-  padding-right: calc(100% - 85%);
 }
 
 footer .navbar-footer-img {

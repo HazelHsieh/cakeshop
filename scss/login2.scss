@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body {
+    margin: 0;
+}
+
+.bg-full {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/start.png);
+    opacity: 0.7;
+    z-index: 0;
+    
+}
+
+.join {
+    left: 0;
+    z-index: 1;
+
+    h1{
+        text-shadow: black 2px 2px;
+    }
+    
+    .community {
+        position: absolute;
+        bottom: 0;
+        font-size: 30px;
+    }
+}
+// @media and (max-whith:780px){
+        
+// }
+
+.login{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    background-color: #494949;
+
+    .login-card  {
+        width: 50%;
+
+        .login-icon {
+            font-size: 38px;
+
+        }
+    }
+    
+}
+
