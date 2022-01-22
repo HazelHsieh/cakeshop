@@ -10,14 +10,52 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
-
     <!-- shopcart CSS -->
     <link rel="stylesheet" href="./css/shopcart.css">
+    <style>
+        /* .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: rgba(red, green, blue, alpha);
+            Center slide text vertically
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        } */
+
+        .swiper {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .mySwiper {
+            height: 30%;
+            box-sizing: border-box;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,24 +73,24 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">關於我們 </a>
+                            <a class="nav-link" href="https://www.icake999.com/buy/about/">關於我們 </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#ingredients">嚴選食材</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">產品列表</a>
+                            <a class="nav-link" href="https://www.caffaina.com/product/patisserie/">產品列表</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#notes">購物須知</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./checkout1.html">
+                            <a class="nav-link" href="">
                                 <i class="far fa-shopping-cart"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="lo">
+                            <a class="nav-link" href="">
                                 <i class="far fa-user"></i>
                             </a>
                         </li>
@@ -98,159 +136,79 @@
             </div>
         </section>
 
-         <!-- 待確認Pricing -->
-        <!-- <section id="product01bestSeller" class="my-5">
-            <div class="container product01 ">
-                <div class="contents  d-flex flex-column  align-items-center justify-content-center">
-                    <div class="row my-5 content">
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card">
-                                <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 天使愛蜜莉</h1>
-                                <p class="cake1-ex text-white">位於台中市北屯區不算熱鬧的街道上，有著粗曠工業風裝潢空間，
-                                    搭配精緻可口的法式甜點。
-                                    CV 最大的特色就是給您別於一般甜點店的用餐環境，像鐵板燒吧檯
-                                    一樣，席位不多採預約制，點餐後可直接欣賞師父的甜點創作，精巧
-                                    手藝短短的在幾分鐘就打造了極品經典的盤勢甜點，一件件甜點就像
-                                    藝術品般呈現至您眼前。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-5 content active ">
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card">
-                                <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 天使愛蜜莉</h1>
-                                <p class="cake1-ex text-white">位於台中市北屯區不算熱鬧的街道上，有著粗曠工業風裝潢空間，
-                                    搭配精緻可口的法式甜點。
-                                    CV 最大的特色就是給您別於一般甜點店的用餐環境，像鐵板燒吧檯
-                                    一樣，席位不多採預約制，點餐後可直接欣賞師父的甜點創作，精巧
-                                    手藝短短的在幾分鐘就打造了極品經典的盤勢甜點，一件件甜點就像
-                                    藝術品般呈現至您眼前。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-5 content">
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card">
-                                <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 天使愛蜜莉</h1>
-                                <p class="cake1-ex text-white">位於台中市北屯區不算熱鬧的街道上，有著粗曠工業風裝潢空間，
-                                    搭配精緻可口的法式甜點。
-                                    CV 最大的特色就是給您別於一般甜點店的用餐環境，像鐵板燒吧檯
-                                    一樣，席位不多採預約制，點餐後可直接欣賞師父的甜點創作，精巧
-                                    手藝短短的在幾分鐘就打造了極品經典的盤勢甜點，一件件甜點就像
-                                    藝術品般呈現至您眼前。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-5 content">
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card">
-                                <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 天使愛蜜莉</h1>
-                                <p class="cake1-ex text-white">位於台中市北屯區不算熱鬧的街道上，有著粗曠工業風裝潢空間，
-                                    搭配精緻可口的法式甜點。
-                                    CV 最大的特色就是給您別於一般甜點店的用餐環境，像鐵板燒吧檯
-                                    一樣，席位不多採預約制，點餐後可直接欣賞師父的甜點創作，精巧
-                                    手藝短短的在幾分鐘就打造了極品經典的盤勢甜點，一件件甜點就像
-                                    藝術品般呈現至您眼前。
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row my-5 content">
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card">
-                                <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 天使愛蜜莉</h1>
-                                <p class="cake1-ex text-white">位於台中市北屯區不算熱鬧的街道上，有著粗曠工業風裝潢空間，
-                                    搭配精緻可口的法式甜點。
-                                    CV 最大的特色就是給您別於一般甜點店的用餐環境，像鐵板燒吧檯
-                                    一樣，席位不多採預約制，點餐後可直接欣賞師父的甜點創作，精巧
-                                    手藝短短的在幾分鐘就打造了極品經典的盤勢甜點，一件件甜點就像
-                                    藝術品般呈現至您眼前。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-5 content">
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card">
-                                <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 天使愛蜜莉</h1>
-                                <p class="cake1-ex text-white">位於台中市北屯區不算熱鬧的街道上，有著粗曠工業風裝潢空間，
-                                    搭配精緻可口的法式甜點。
-                                    CV 最大的特色就是給您別於一般甜點店的用餐環境，像鐵板燒吧檯
-                                    一樣，席位不多採預約制，點餐後可直接欣賞師父的甜點創作，精巧
-                                    手藝短短的在幾分鐘就打造了極品經典的盤勢甜點，一件件甜點就像
-                                    藝術品般呈現至您眼前。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tabs d-flex ">
-                        <div class="tab"><img class="border-0" src="img/14微沐起士.png" width="100%" alt=""></div>
-                        <div class="tab active"><img class="border-0" src="img/14微沐起士.png" width="100%" alt=""></div>
-                        <div class="tab"><img class="border-0" src="img/14微沐起士.png" width="100%" alt=""></div>
-                        <div class="tab"><img class="border-0" src="img/14微沐起士.png" width="100%" alt=""></div>
-                        <div class="tab"><img class="border-0" src="img/14微沐起士.png" width="100%" alt=""></div>
-                        <div class="tab"><img class="border-0" src="img/14微沐起士.png" width="100%" alt=""></div>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </section>  -->
-
-
         <section class="product01 my-5">
             <div class="cake-infobox">
-                <div class="cake-info cake-info-none" data-type="法式烤布蕾" >
+                <!-- <div class="cake-info cake-info-none" data-type="法式烤布蕾">
                     <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 法式烤布蕾</h1>
-                    <p class="cake1-ex text-white">位於台中市北屯區不算熱鬧的街道上，有著粗曠工業風裝潢空間，
-                        搭配精緻可口的法式甜點。
-                        CV 最大的特色就是給您別於一般甜點店的用餐環境，像鐵板燒吧檯
-                        一樣，席位不多採預約制，點餐後可直接欣賞師父的甜點創作，精巧
-                        手藝短短的在幾分鐘就打造了極品經典的盤勢甜點，一件件甜點就像
-                        藝術品般呈現至您眼前。
-                    </p>
+                    <p class="text-white">Bergamot Mousse</p>
+                    <h5 class="cake1-ex text-white mt-4">天然香草棒、鮮奶、鮮奶油、蛋</h5>
+                </div> -->
+                <div class="cake-info cake-info-none" data-type="佛朗紅荔果">
+                    <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 佛朗紅荔果</h1>
+                    <p class="text-white">Litchi with Rose and Raspberry Jam Mousse</p>
+                    <h5 class="cake1-ex text-white mt-4">覆盆子果泥、荔枝果泥、玫瑰花瓣、蛋、糖</h5>
                 </div>
                 <div class="cake-info cake-info-none " data-type="巴黎花園">
                     <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 巴黎花園</h1>
-                    <p class="cake1-ex text-white">位於台中市北屯區不算熱鬧的街道上，有著粗曠工業風裝潢空間，
-                        搭配精緻可口的法式甜點。
-                        CV 最大的特色就是給您別於一般甜點店的用餐環境，像鐵板燒吧檯
-                        一樣，席位不多採預約制，點餐後可直接欣賞師父的甜點創作，精巧
-                        手藝短短的在幾分鐘就打造了極品經典的盤勢甜點，一件件甜點就像
-                        藝術品般呈現至您眼前。
-                    </p>
+                    <p class="text-white">Paris Brest</p>
+                    <h5 class="cake1-ex text-white mt-4">牛奶、奶油、杏仁粉、卡士達內餡、新鮮水果、蛋、低筋麵粉</h5>
                 </div>
                 <div class="cake-info cake-info-none" data-type="天晴檸檬塔">
                     <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 天晴檸檬塔</h1>
-                    <p class="cake1-ex text-white">位於台中市北屯區不算熱鬧的街道上，有著粗曠工業風裝潢空間，
-                        搭配精緻可口的法式甜點。
-                        CV 最大的特色就是給您別於一般甜點店的用餐環境，像鐵板燒吧檯
-                        一樣，席位不多採預約制，點餐後可直接欣賞師父的甜點創作，精巧
-                        手藝短短的在幾分鐘就打造了極品經典的盤勢甜點，一件件甜點就像
-                        藝術品般呈現至您眼前。
-                    </p>
-                </div> 
+                    <p class="text-white">Lemon Tart</p>
+                    <h5 class="cake1-ex text-white mt-4">新鮮檸檬、糖、奶油、蛋</h5>
+                </div>
+                <div class="cake-info cake-info-none" data-type="聖多諾黑">
+                    <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 聖多諾黑</h1>
+                    <p class="text-white">Saint-Honoré</p>
+                    <h5 class="cake1-ex text-white mt-4">牛奶、奶油、杏仁粉、蘋果餡、鮮奶油</h5>
+                </div>
+                <div class="cake-info cake-info-none" data-type="微沐起士">
+                    <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 微沐起士</h1>
+                    <p class="text-white">Cheese Cake</p>
+                    <h5 class="cake1-ex text-white mt-4">美國起士、無花果、紅酒、奶油、砂糖</h5>
+                </div>
+                <div class="cake-info cake-info-none" data-type="22階">
+                    <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 22階</h1>
+                    <p class="text-white">Chocolate Mille Crepes</p>
+                    <h5 class="cake1-ex text-white mt-4">64%苦甜巧克力、鮮奶油、蛋、可可粉、糖</h5>
+                </div>
+                <div class="cake-info cake-info-none" data-type="焦糖蘋果千層">
+                    <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 焦糖蘋果千層</h1>
+                    <p class="text-white">Caramel Apple Mille Crepes</p>
+                    <h5 class="cake1-ex text-white mt-4">新鮮蘋果、奶油、蛋、白巧克力、焦糖</h5>
+                </div>
+                <div class="cake-info cake-info-none" data-type="彼岸花">
+                    <h1 class="cake1-title text-white"><span class="text-warning">’‘</span> 彼岸花</h1>
+                    <p class="text-white">Bergamot Mousse Cake</p>
+                    <h5 class="cake1-ex text-white mt-4">草莓泥、覆盆子泥、佛手柑泥、鹽漬櫻花、鮮奶油</h5>
+                </div>
             </div>
 
-            <div class="cake-imgbox">
-                <div class="cake-img" data-type="法式烤布蕾"> <img src="./img/16法式烤布蕾.png" alt=""></div>
-                <div class="cake-img" data-type="巴黎花園"> <img src="./img/07巴黎花園.png" alt=""></div>
-                <div class="cake-img" data-type="天晴檸檬塔"> <img src="./img/15天晴檸檬塔.png" alt=""></div>
-                <div class="cake-img"> <img src="./img/11聖多諾黑.png" alt=""></div>
-                <div class="cake-img"> <img src="./img/14微沐起士.png" alt=""></div>
-                <div class="cake-img"> <img src="./img/09-22階.png" alt=""></div>
-                <div class="cake-img"> <img src="./img/17焦糖蘋果千層-1.png" alt=""></div>
-                <div class="cake-img"> <img src="./img/04彼岸花.png" alt=""></div>
+            <div thumbsSlider="" class="swiper mySwiper cake-imgbox ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide cake-img img" data-type="佛朗紅荔果"><img src="./img/02佛朗紅荔果.png" alt=""></div>
+                    <div class="swiper-slide cake-img img" data-type="巴黎花園"> <img src="./img/07巴黎花園.png" alt=""></div>
+                    <div class="swiper-slide cake-img img" data-type="天晴檸檬塔"> <img src="./img/15天晴檸檬塔.png" alt=""></div>
+                    <div class=" swiper-slide cake-img img" data-type="聖多諾黑"> <img src="./img/11聖多諾黑.png" alt=""></div>
+                    <div class="swiper-slide cake-img img" data-type="微沐起士"> <img src="./img/14微沐起士.png" alt=""></div>
+                    <div class="swiper-slide cake-img img" data-type="22階"> <img src="./img/09-22階.png" alt=""></div>
+                    <div class="swiper-slide cake-img img" data-type="焦糖蘋果千層"> <img src="./img/17焦糖蘋果千層-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide cake-img img" data-type="彼岸花"> <img src="./img/04彼岸花.png" alt=""></div>
+                </div>
             </div>
-
-
-
-
+            <!-- <div class="cake-imgbox row">
+                 <div class="cake-img img" data-type="法式烤布蕾"> <img src="./img/16法式烤布蕾.png" alt=""></div> 
+                <div class="cake-img img" data-type="佛朗紅荔果"> <img src="./img/02佛朗紅荔果.png" alt=""></div>
+                <div class="cake-img img" data-type="巴黎花園"> <img src="./img/07巴黎花園.png" alt=""></div>
+                <div class="cake-img img" data-type="天晴檸檬塔"> <img src="./img/15天晴檸檬塔.png" alt=""></div>
+                <div class="cake-img img" data-type="聖多諾黑"> <img src="./img/11聖多諾黑.png" alt=""></div>
+                <div class="cake-img img" data-type="微沐起士"> <img src="./img/14微沐起士.png" alt=""></div>
+                <div class="cake-img img" data-type="22階"> <img src="./img/09-22階.png" alt=""></div>
+                <div class="cake-img img" data-type="焦糖蘋果千層"> <img src="./img/17焦糖蘋果千層-1.png" alt=""></div>
+                <div class="cake-img img" data-type="彼岸花"> <img src="./img/04彼岸花.png" alt=""></div>
+            </div> -->
         </section>
 
         <section class="ingredients my-5" id="ingredients">
@@ -419,6 +377,11 @@
             </div>
 
         </section>
+
+
+
+
+
 
         <section class="notes" id="notes">
             <div class="container">
@@ -693,6 +656,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
+    <!-- swiper Core JS CDN  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 8,
+            slidesPerView: 6,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        // var swiper2 = new Swiper(".mySwiper2", {
+        //     loop: true,
+        //     spaceBetween: 10,
+        //     navigation: {
+        //         nextEl: ".swiper-button-next",
+        //         prevEl: ".swiper-button-prev",
+        //     },
+        //     thumbs: {
+        //         swiper: swiper,
+        //     },
+        // });
+    </script>
+
 
     <!-- 自己的Js -->
     <script src="js/shopcart.js"></script>

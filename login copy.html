@@ -13,57 +13,140 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!-- layout css -->
-    <link rel="stylesheet" href="./css/login2.css">
+    <!-- <link rel="stylesheet" href="./css/login.css"> -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .main .contain{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgb(22, 32, 32)),url('./img/start.png');
+            background-position: center;
+            background-size: cover;
+        }
+        .main .contain .left{
+            width: 55%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .main .contain .left h1{
+            color: white;
+
+        }
+        .main .contain .left .community{
+            position: absolute;
+            bottom: 15px;
+            color: #fff;
+        }
+        .main .contain .login{
+            width: 50%;
+            height: 100vh;
+            background-color:#494949;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main .contain .login .login-contain{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main .contain .login .login-contain .icon-box{
+            padding: 20px 0px;
+        }
+        .main .contain .login .login-contain .icon-box i{
+            font-size: 35px;
+        }
+        .main .contain .login .login-contain .input-box{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main .contain .login .login-contain .input-box input{
+            margin: 15px 0px;
+            width: 100%;
+        }
+        .main .contain .login .login-contain .input-box button{
+            width: 50%;
+        }
+        .main .contain .login .login-contain .input-box a{
+            margin-bottom: 20px;
+            margin-left: auto;
+        }
+        .community.show-or-none{
+            display: none;
+            position: absolute;
+            bottom: 15px;
+            color: #fff;
+        }
+        @media (max-width:992px) {
+            .main .contain .left{
+                display: none;
+            } 
+            .main .contain .login{
+                width: 100%;
+                background-color: unset;
+            }
+            
+            
+            .community.show-or-none{
+                display: block;
+            }
+        }
+        @media (max-width:576px) {
+            .main .contain .login .login-contain .input-box{
+                width: 70%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <section class="bg-full vh-100 w-100 d-flex position-relative">
-        <div class="join h-100 w-50 d-none d-lg-flex flex-column justify-content-center align-items-center text-white">
-            <h1 class="title "> hello!</h1>
-            <div class="community text-white">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter mx-3"></i>
-                <i class="fab fa-instagram"></i>
+    <div class="main">
+        <div class="contain">
+            <div class="left">
+                <h1>hello!</h1>
+                <div class="community">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter mx-3"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="login">
+                <div class="login-contain">
+                    <img src="./img/cv.logo.svg" alt="">
+                    <div class="icon-box">
+                        <i class="text-white fab fa-facebook-square"></i>
+                        <i class="text-white fab fa-google-plus mx-3"></i>
+                        <i class="text-white fab fa-invision"></i>
+                    </div>
+                    <div class="input-box">
+                        <label for="account">or use email your account</label>
+                        <input type="text" name="account" id="account">
+                        <input type="text" name="password" id="password">
+                        <a href="#">Forgot your password?</a>
+                        <button>SIGN IN</button>
+                    </div>
+                    <div class="community show-or-none">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter mx-3"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="login h-100 w-50 d-flex justify-content-center align-items-center ">
-            <div class="login-card d-flex flex-column w-75 text-white justify-content-center align-items-center ">
-                <form action="">
-                    <div>
-                        <img class="m-3" src="./img/cv.logo.svg" width="300px"
-                            height="90px" alt="">
-                    </div>
-                    <div class="login-icon my-3 d-flex justify-content-center ">
-                        <i class=" fab fa-facebook-square"></i>
-                        <i class=" fab fa-google-plus mx-3"></i>
-                        <i class=" fab fa-invision"></i>
-                    </div>
-                    <div class="form-group">
-                        <label class=" d-flex justify-content-center" for="exampleInputEmail1">or use email your
-                            account</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1"></label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <a href="" class="text-white">Forgot your password?</a>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <button type="submit" class="my-4 w-50 btn btn-light  ">SIGN IN</button>
-                    </div>
-                </form>
-
-            </div>
-
-        </div>
-
-    </section>
-        
-
-
+    </div>
     <!-- jquery Core JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
