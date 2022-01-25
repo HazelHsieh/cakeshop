@@ -1,52 +1,94 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+*{
+    box-sizing: border-box;
 }
+body{
+    padding: 0;
+    margin: 0;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgb(22, 32, 32)),url('../img/start.png');
+    background-position: center;
+    background-size: cover;
+}
+.main .left{
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.main .left h1{
+    color: white;
 
-body {
-  margin: 0;
 }
-
-.bg-full {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center center;
-  background-image: url(../img/start.png);
-  opacity: 0.6;
+.main .left .community{
+    position: absolute;
+    bottom: 15px;
+    color: #fff;
 }
-
-.join {
-  left: 0;
-  z-index: 1;
-  width: 55%;
-  height: 100vh;
+.main .login{
+    width: 45%;
+    height: 100vh;
+    background-color:#494949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.join h1 {
-  text-shadow: black 2px 2px;
+.main .login .login-contain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.join .community {
-  position: absolute;
-  bottom: 0;
-  font-size: 30px;
+.main .login .login-contain .icon-box{
+    padding: 20px 0px;
 }
-
-.login {
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  background-color: #494949;
-  width: 45%;
-  height: 100vh;
+.main .login .login-contain .icon-box i{
+    font-size: 35px;
 }
-
-.login .login-card {
-  width: 50%;
+.main .login .login-contain .input-box{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.login .login-card .login-icon {
-  font-size: 38px;
+.main .login .login-contain .input-box input{
+    margin: 15px 0px;
+    width: 100%;
 }
-/*# sourceMappingURL=login.css.map */
+.main .login .login-contain .input-box button{
+    width: 50%;
+}
+.main .login .login-contain .input-box a{
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+.community.show-or-none{
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    color: #fff;
+}
+@media (max-width:992px) {
+    .main .left{
+        display: none;
+    } 
+    .main .login{
+        width: 100%;
+        background-color: unset;
+    }
+    
+    
+    .community.show-or-none{
+        display: block;
+    }
+}
+@media (max-width:576px) {
+    .main .login .login-contain .input-box{
+        width: 70%;
+    }
+}
