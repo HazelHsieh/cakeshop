@@ -4,6 +4,7 @@
 body {
     margin: 0; 
     transition: 1s; 
+    font-family: 微軟正黑體;
 }
 
 
@@ -75,8 +76,8 @@ body {
     }
     @media screen and (max-width: 555px){
         #about-decor {
-        font-size: 40px;
-        top: 68%;
+        font-size: 22px;
+        top: 73%;
         }
     }
 }
@@ -95,12 +96,25 @@ body {
                 
             }
         }
-        @media screen and (max-width:1000px) {
-            .about2-title > h4 {
-                font-size: 18px;
-            }
-        }
+        
+        
 
+    }
+    @media screen and (max-width:1000px) {
+        .about2-title > h4 {
+            font-size: 18px;
+            z-index: 1;
+        }
+    }
+    @media screen and (max-width:539px) {
+        .about2-title > h1 {
+            font-size: 24px;
+        }
+        .about2-title > h4 {
+            font-size: 15px;
+            
+        }
+        
     }
     
 
@@ -191,7 +205,14 @@ body {
                     
                 }
                 .info-page{
+                    p{
+                        font-size: 14px;
+                        padding-top: 5%;
+                    }
                     width: 100%;
+                    button {
+                        font-size: 12px;
+                    }
                 }
                 
             }
@@ -219,6 +240,7 @@ body {
     align-items:center;
     justify-content: space-between;
 
+
     .cake-infobox {
         width: 30%;
         padding-top: 18%;
@@ -235,6 +257,27 @@ body {
         }
         
     }
+    @media screen and (max-width:1200px){
+        .cake-infobox {
+            padding-top: 20%;
+            width: 100%;
+        }
+
+    }
+    @media screen and (max-width:992px){
+        .cake-infobox {
+            padding-top: 25%;
+        }
+    }
+    @media screen and (max-width:576px){
+        .cake-infobox {
+            padding-top: 40%;
+        }
+        
+    }
+
+
+
     
     .cake-imgbox{
         display: flex;
@@ -255,27 +298,14 @@ body {
             opacity: 1;
         }
         
-
+    }    
+}
+@media screen and (max-width:576px){
+    .product01 {
+        height: 500px;
+        
     }
-
-    @media screen and (max-width:1200px){
-        .cake-infobox {
-            padding-top: 20%;
-            width: 100%;
-        }
-
-    }
-    @media screen and (max-width:992px){
-        .cake-infobox {
-            padding-top: 25%;
-        }
-    }
-    @media screen and (max-width:576px){
-        .cake-infobox {
-            padding-top: 40%;
-        }
-    }
-
+    
 }
     
 
@@ -303,6 +333,11 @@ body {
                 background-color: #F2D156;
                 margin-top: 15px;
             }
+        }
+        @media screen and (max-width:539px) {
+            h1 {
+                font-size: 24px;
+            }  
         }
     }
     .ingredients-card {
@@ -350,6 +385,13 @@ body {
                 background-color: #F2D156;
                 margin-top: 15px;
             }
+        }
+        @media screen and (max-width:539px) {
+            h1 {
+                font-size: 24px;
+            }
+            
+            
         }
     }
 
