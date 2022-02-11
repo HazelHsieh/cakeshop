@@ -167,10 +167,16 @@ body {
 
 .about2 .about2-info .container .info-page .btn {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about2 .about2-info .container .info-page .btn .btn-decor {
-  width: 65%;
+  width: 55%;
   height: 1px;
   background-color: #050502;
 }

@@ -149,8 +149,10 @@ body {
     
                 .btn {
                     width: 100%;
+                    display: flex;
+                    justify-content: center;
                     .btn-decor {
-                        width: 65%;
+                        width: 55%;
                         height: 1px;
                         background-color: #050502;
     
