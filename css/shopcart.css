@@ -184,9 +184,6 @@ body {
 .about2 .about2-info .container .info-page .btn button {
   width: 30%;
   background-color: #F2D156;
-}
-
-.about2 .about2-info .container .info-page .btn button a:link {
   color: #050502;
 }
 
@@ -463,44 +460,58 @@ footer .footer-nav #footer-decor {
   top: -105px;
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1780px) {
   footer .footer-nav #footer-decor {
     font-size: 130px;
     top: -100px;
   }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1650px) {
+  footer .footer-nav #footer-decor {
+    font-size: 115px;
+    top: -100px;
+  }
+}
+
+@media screen and (max-width: 1468px) {
   footer .footer-nav #footer-decor {
     font-size: 100px;
-    top: -80px;
+    top: -85px;
   }
 }
 
 @media screen and (max-width: 1350px) {
   footer .footer-nav #footer-decor {
-    font-size: 85px;
+    font-size: 80px;
     top: -70px;
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1005px) {
   footer .footer-nav #footer-decor {
     font-size: 65px;
     top: -55px;
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 805px) {
   footer .footer-nav #footer-decor {
     font-size: 50px;
     top: -40px;
   }
 }
 
+@media screen and (max-width: 600px) {
+  footer .footer-nav #footer-decor {
+    font-size: 40px;
+    top: -30px;
+  }
+}
+
 @media screen and (max-width: 555px) {
   footer .footer-nav #footer-decor {
-    font-size: 30px;
+    font-size: 28px;
     top: -20px;
   }
 }
